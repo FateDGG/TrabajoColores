@@ -5,10 +5,16 @@ public class Galleta {
     private String colorBase;
     private String adornos;
     private String epoca;
+    private String ingrediente;
     
     public Galleta(){
     }
-
+    public String getIngrediente(){
+        return ingrediente;
+    }
+    public void setIngrediente(String ingrediente){
+        this.ingrediente=ingrediente;
+    }
     public String getColorBase() {
         return colorBase;
     }
@@ -33,7 +39,13 @@ public class Galleta {
         this.epoca = epoca;
     }
     
-    public void comer(String Comer){
-        System.out.println("Se están comiendo una galleta de gengibre");
+    public void comer(String fecha){
+        System.out.println("Se están comiendo una galleta de gengibre en " + fecha);
+    }
+    public void cocinar(){
+        System.out.println("Se deben hornear bien para que sepan rico");
+    }
+    public void gengibres(){
+        System.out.println("El sabor a gengibre puede ser un poco fuerte si no se cocina bien");
     }
 }
